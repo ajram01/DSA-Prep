@@ -12,5 +12,8 @@ public class Main {
         myLinkedList.getTail();
         myLinkedList.getLength();
 
+        myLinkedList.append(2);
+        myLinkedList.printList();
+
     }
 }
