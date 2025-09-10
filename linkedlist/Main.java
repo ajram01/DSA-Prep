@@ -17,6 +17,8 @@ public class Main {
         myLinkedList.removeLast();
         myLinkedList.getTail();
         myLinkedList.removeLast();
+        myLinkedList.prepend(2);
+        myLinkedList.printList();
 
     }
 }
