@@ -12,13 +12,22 @@ public class Main {
         myLinkedList.getTail();
         myLinkedList.getLength();
 
+        //Test append method
         myLinkedList.append(2);
         myLinkedList.printList();
+
+        //Test remove last method
         myLinkedList.removeLast();
         myLinkedList.getTail();
         myLinkedList.removeLast();
+
+        //Test prepend method
         myLinkedList.prepend(2);
+        myLinkedList.prepend(5);
         myLinkedList.printList();
 
+        //Test remove first node method
+        myLinkedList.removeFirst();
+        myLinkedList.printList();
     }
 }
