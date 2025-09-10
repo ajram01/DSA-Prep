@@ -29,5 +29,11 @@ public class Main {
         //Test remove first node method
         myLinkedList.removeFirst();
         myLinkedList.printList();
+
+        //Test get method
+        myLinkedList.append(35);
+        myLinkedList.append(321);
+        myLinkedList.append(24);
+        System.out.println(myLinkedList.get(2).value);
     }
 }

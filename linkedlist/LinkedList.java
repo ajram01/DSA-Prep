@@ -101,6 +101,18 @@ public class LinkedList {
         return temp;
     }
 
+    public Node get(int index){
+
+        if (length < index || index < 0) return null;
+
+        Node temp = head;
+
+        for (int i = 0; i < index; i++){
+            temp = temp.next;
+        }
+        return temp;
+    }
+
     public void getHead(){
         System.out.println("Head: " + head.value);
     }
