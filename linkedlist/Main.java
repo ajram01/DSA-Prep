@@ -35,5 +35,10 @@ public class Main {
         myLinkedList.append(321);
         myLinkedList.append(24);
         System.out.println(myLinkedList.get(2).value);
+
+        //Test set method
+        myLinkedList.set(2, 34);
+        System.out.println(myLinkedList.get(2).value);
+
     }
 }
