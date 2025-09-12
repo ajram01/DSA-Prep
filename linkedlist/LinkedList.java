@@ -162,6 +162,25 @@ public class LinkedList {
 
     }
 
+    public void reverse(){
+
+        Node temp = head;
+        head = tail;
+        tail = temp;
+
+        Node prev = null;
+        Node next = temp.next;
+
+        for (int i = 0; i < length; i++){
+            next = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp = next;
+        }
+
+
+    }
+
     public void getHead(){
         System.out.println("Head: " + head.value);
     }

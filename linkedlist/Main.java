@@ -56,5 +56,13 @@ public class Main {
         myLinkedList.remove(2);
         myLinkedList.printList();
 
+        // Test reverse method
+        System.out.println("List before reversing");
+        myLinkedList.printList();
+
+        System.out.println("List after reversing");
+        myLinkedList.reverse();
+        myLinkedList.printList();
+
     }
 }
