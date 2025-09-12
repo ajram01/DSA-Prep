@@ -40,5 +40,13 @@ public class Main {
         myLinkedList.set(2, 34);
         System.out.println(myLinkedList.get(2).value);
 
+        // Test insert method
+        System.out.println("Current Linked List: ");
+        myLinkedList.printList();
+
+        myLinkedList.insert(2, 204);
+        System.out.println("My linked list after inserting 204 at index 2: ");
+        myLinkedList.printList();
+
     }
 }
