@@ -48,5 +48,13 @@ public class Main {
         System.out.println("My linked list after inserting 204 at index 2: ");
         myLinkedList.printList();
 
+        //Test remove method
+        System.out.println("List before removal");
+        myLinkedList.printList();
+
+        System.out.println("Removing node at index 2");
+        myLinkedList.remove(2);
+        myLinkedList.printList();
+
     }
 }

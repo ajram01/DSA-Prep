@@ -145,6 +145,23 @@ public class LinkedList {
         return true;
     }
 
+    public Node remove(int index){
+
+        if (index < 0 || index > length) return null;
+
+        if (index == 0) return removeFirst();
+        if (index == length) return removeLast();
+
+        Node prev = get(index - 1);
+        Node remove = prev.next;
+
+        prev.next = remove.next;
+        remove.next = null;
+        length--;
+        return remove;
+
+    }
+
     public void getHead(){
         System.out.println("Head: " + head.value);
     }
