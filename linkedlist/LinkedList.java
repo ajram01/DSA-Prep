@@ -181,6 +181,23 @@ public class LinkedList {
 
     }
 
+    public Node findMiddleNode(){
+
+        Node slow = head;
+        Node fast = head;
+
+        while( fast != null && fast.next != null){
+
+            fast = fast.next.next;
+            slow = slow.next;
+
+        }
+
+        return slow;
+
+
+    }
+
     public void getHead(){
         System.out.println("Head: " + head.value);
     }
