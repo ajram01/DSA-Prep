@@ -252,6 +252,36 @@ public class LinkedList {
 
     }
 
+    public int binaryToDecimal(){
+
+        // This assumes node values are only 0 or 1
+
+        if (head == null) return 0;
+
+        Node curr = head;
+        int result = 0;
+
+        while (curr != null){
+
+            if (curr.value == 1){
+
+                result = (result * 2) + 1;
+
+            } else {
+
+                result *= 2;
+
+            }
+
+            curr = curr.next;
+
+        }
+
+        return result;
+
+
+    }
+
     public void getHead(){
         System.out.println("Head: " + head.value);
     }
