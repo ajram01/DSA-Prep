@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class LinkedList {
 
     private Node head;
@@ -220,6 +223,32 @@ public class LinkedList {
         }
 
         return slow;
+
+    }
+
+    public void removeDuplicates(){
+
+        if (head == null || head.next == null) return;
+
+        Set<Integer> seen = new HashSet<>();
+
+        Node temp = head;
+        Node prev = null;
+
+        while (temp != null){
+
+            if (seen.contains(temp.value)){
+
+                prev.next = temp.next;
+                temp = prev.next;
+
+            } else {
+                seen.add(temp.value);
+                prev = temp;
+                temp = temp.next;
+            }
+
+        }
 
     }
 
