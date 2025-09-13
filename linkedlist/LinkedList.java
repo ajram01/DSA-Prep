@@ -198,6 +198,31 @@ public class LinkedList {
 
     }
 
+    public Node findKthNode(int k){
+
+        if (head == null) return null;
+        if (k == 1) return head;
+
+        Node slow = head;
+        Node fast = head;
+
+        for (int i = 0; i < k; i++){
+
+            if (fast.next == null) return null;
+
+            fast = fast.next;
+
+        }
+
+        while (fast != null){
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        return slow;
+
+    }
+
     public void getHead(){
         System.out.println("Head: " + head.value);
     }
