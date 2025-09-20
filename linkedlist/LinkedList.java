@@ -282,6 +282,34 @@ public class LinkedList {
 
     }
 
+    public void reverseBetween(int startIndex, int endIndex){
+
+        if(head == null || head.next == null) return;
+
+        Node dummy = new Node(0);
+        dummy.next = head;
+        Node prev = dummy;
+
+        for (int i = -1; i < startIndex; i++){
+            prev = prev.next;
+        }
+
+        int rounds = endIndex - startIndex;
+        Node curr = prev.next;
+
+        for (int j = 0; j < rounds; j++){
+
+            Node toMove = curr.next;
+            curr.next = toMove.next;
+            toMove.next = prev.next;
+            prev.next = toMove;
+        }
+        head = dummy.next;
+
+
+
+    }
+
     public void getHead(){
         System.out.println("Head: " + head.value);
     }
