@@ -306,7 +306,25 @@ public class LinkedList {
         }
         head = dummy.next;
 
+    }
 
+    public void swapPairs(){
+
+        if (head == null || head.next == null) return;
+
+        Node dummy = new Node(0);
+        dummy.next = head;
+        Node prev = head;
+        Node first = head;
+        while (first != null && first.next != null){
+            Node second = first.next;
+            first.next = second.next;
+            prev.next = second;
+            second.next = first;
+            prev = first;
+            first = first.next;
+        }
+        head = dummy.next;
 
     }
 
