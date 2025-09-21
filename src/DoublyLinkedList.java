@@ -48,7 +48,7 @@ public class DoublyLinkedList{
 
         Node newNode = new Node(value);
 
-        if (head == null){
+        if (length == 0){
             head = newNode;
             tail = newNode;
             return;
@@ -57,6 +57,7 @@ public class DoublyLinkedList{
         tail.next = newNode;
         newNode.prev = tail;
         tail = newNode;
+        length++;
     }
 
 }
