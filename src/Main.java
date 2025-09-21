@@ -71,6 +71,10 @@ public class Main {
         System.out.println(myDll.getTail().value);
         System.out.println(myDll.getLength());
         myDll.printList();
+        myDll.append(24);
+        myDll.printList();
+        myDll.removeLast();
+        myDll.printList();
 
     }
 }
