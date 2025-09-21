@@ -44,4 +44,19 @@ public class DoublyLinkedList{
         }
     }
 
+    public void append(int value){
+
+        Node newNode = new Node(value);
+
+        if (head == null){
+            head = newNode;
+            tail = newNode;
+            return;
+        }
+
+        tail.next = newNode;
+        newNode.prev = tail;
+        tail = newNode;
+    }
+
 }
