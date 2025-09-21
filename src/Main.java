@@ -67,20 +67,15 @@ public class Main {
         // ############### Doubly Linked List Test ###############
 
         DoublyLinkedList myDll = new DoublyLinkedList(8);
-        System.out.println(myDll.getHead().value);
-        System.out.println(myDll.getTail().value);
-        System.out.println(myDll.getLength());
-        myDll.printList();
-        myDll.append(24);
-        myDll.printList();
-        myDll.removeLast();
+        myDll.append(8);
+        myDll.append(234);
+        myDll.append(593);
+        myDll.append(1);
+        myDll.append(78);
         myDll.printList();
 
-        myDll.prepend(90);
-        System.out.println(myDll.getHead().value);
+        System.out.println(myDll.get(4).value);
 
-        myDll.removeFirst();
-        System.out.println(myDll.getHead().value);
 
     }
 }
