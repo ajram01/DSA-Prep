@@ -79,6 +79,9 @@ public class Main {
         myDll.insert(38, 4);
         System.out.println(myDll.get(4).value);
 
+        System.out.println(myDll.remove(4).value);
+        System.out.println(myDll.get(4).value);
 
     }
+
 }
