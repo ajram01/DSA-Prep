@@ -79,5 +79,8 @@ public class Main {
         myDll.prepend(90);
         System.out.println(myDll.getHead().value);
 
+        myDll.removeFirst();
+        System.out.println(myDll.getHead().value);
+
     }
 }
