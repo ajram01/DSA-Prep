@@ -76,5 +76,8 @@ public class Main {
         myDll.removeLast();
         myDll.printList();
 
+        myDll.prepend(90);
+        System.out.println(myDll.getHead().value);
+
     }
 }
