@@ -139,4 +139,29 @@ public class DoublyLinkedList{
         return false;
     }
 
+    public boolean insert(int value, int index){
+
+        if (index < 0 || index > length) return false;
+
+        if (index == 0){
+            prepend(value);
+            return true;
+        } else if (index == length){
+            append(value);
+            return true;
+        }
+
+        Node newNode = new Node(value);
+
+        Node prev = get(index - 1);
+        Node after = prev.next;
+        prev.next = newNode;
+        newNode.prev = prev;
+        after.prev = newNode;
+        newNode.next = after;
+        length++;
+        return true;
+
+    }
+
 }

@@ -76,6 +76,9 @@ public class Main {
 
         System.out.println(myDll.get(4).value);
 
+        myDll.insert(38, 4);
+        System.out.println(myDll.get(4).value);
+
 
     }
 }
