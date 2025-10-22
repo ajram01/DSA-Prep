@@ -82,6 +82,11 @@ public class Main {
         System.out.println(myDll.remove(4).value);
         System.out.println(myDll.get(4).value);
 
+        Queue myQueue = new Queue(8);
+        myQueue.getLast();
+        myQueue.enqueue(38);
+        myQueue.getLast();
+
     }
 
 }
