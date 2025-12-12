@@ -5,87 +5,23 @@ import java.util.HashMap;
 public class Main {
     public static void main(String[] args) {
 
-//
-//        LinkedList myLinkedList = new LinkedList(4);
-//
-//        myLinkedList.getHead();
-//        myLinkedList.getTail();
-//        myLinkedList.getLength();
-//
-//        //Test append method
-//        myLinkedList.append(2);
-//        myLinkedList.printList();
-//
-//        //Test remove last method
-//        myLinkedList.removeLast();
-//        myLinkedList.getTail();
-//        myLinkedList.removeLast();
-//
-//        //Test prepend method
-//        myLinkedList.prepend(2);
-//        myLinkedList.prepend(5);
-//        myLinkedList.printList();
-//
-//        //Test remove first node method
-//        myLinkedList.removeFirst();
-//        myLinkedList.printList();
-//
-//        //Test get method
-//        myLinkedList.append(35);
-//        myLinkedList.append(321);
-//        myLinkedList.append(24);
-//        System.out.println(myLinkedList.get(2).value);
-//
-//        //Test set method
-//        myLinkedList.set(2, 34);
-//        System.out.println(myLinkedList.get(2).value);
-//
-//        // Test insert method
-//        System.out.println("Current Linked List: ");
-//        myLinkedList.printList();
-//
-//        myLinkedList.insert(2, 204);
-//        System.out.println("My linked list after inserting 204 at index 2: ");
-//        myLinkedList.printList();
-//
-//        //Test remove method
-//        System.out.println("List before removal");
-//        myLinkedList.printList();
-//
-//        System.out.println("Removing node at index 2");
-//        myLinkedList.remove(2);
-//        myLinkedList.printList();
-//
-//        // Test reverse method
-//        System.out.println("List before reversing");
-//        myLinkedList.printList();
-//
-//        System.out.println("List after reversing");
-//        myLinkedList.reverse();
-//        myLinkedList.printList();
 
-        // ############### Doubly Linked List Test ###############
+        BinarySearchTree bst = new BinarySearchTree();
 
-        DoublyLinkedList myDll = new DoublyLinkedList(8);
-        myDll.append(8);
-        myDll.append(234);
-        myDll.append(593);
-        myDll.append(1);
-        myDll.append(78);
-        myDll.printList();
+        System.out.println(bst);
 
-        System.out.println(myDll.get(4).value);
+        bst.insert(47);
+        bst.insert(21);
+        bst.insert(76);
+        bst.insert(18);
+        bst.insert(52);
+        bst.insert(82);
 
-        myDll.insert(38, 4);
-        System.out.println(myDll.get(4).value);
+        bst.insert(27);
 
-        System.out.println(myDll.remove(4).value);
-        System.out.println(myDll.get(4).value);
+        System.out.println(bst.root.left.right.value);
 
-        Queue myQueue = new Queue(8);
-        myQueue.getLast();
-        myQueue.enqueue(38);
-        myQueue.getLast();
+        System.out.println(bst.contains(100));
 
     }
 
