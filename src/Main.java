@@ -7,6 +7,11 @@ public class Main {
 
         myTable.printTable();
 
+        myTable.set("bike", 29);
+        myTable.set("AJ", 21);
+
+        myTable.printTable();
+
     }
 
 }
